@@ -10,8 +10,8 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
 // mysqli_fetch_assoc($result); // array associative
 // mysqli_fetch_array($result); // keduanya
 $rows = [];
-while (mysqli_fetch_assoc($result)) {
-  echo $rows[] = $row;
+while ($row = mysqli_fetch_assoc($result)) {
+  $rows[] = $row;
 }
 
 // tampung ke variabel mahasiswa
