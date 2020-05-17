@@ -34,6 +34,7 @@ if (isset($_POST['submit'])) {
         }
         $error = true;
     }
+    return mysqli_num_rows($cek_user);
 }
 
 
