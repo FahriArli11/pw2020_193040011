@@ -1,10 +1,10 @@
-<?php 
+<?php
 $alat = [
     [
         "gambar" => "ac.jpg",
         "alat elektronik" => "ac",
         "alamat" => "jln. taman sari",
-        "harga" => "Rp. 2.000.000"
+        "harga" => "Rp.2.000.000"
     ],
     [
         "gambar" => "gitar.jpg",
@@ -28,8 +28,8 @@ $alat = [
         "gambar" => "kulkas.jpg",
         "alat elektronik" => "kulkas",
         "alamat" => "jln. Taman sari",
-        "harga" => "2.500.000"
-    
+        "harga" => "Rp2.500.000"
+
     ],
     [
         "gambar" => "laptop.jpg",
@@ -65,54 +65,61 @@ $alat = [
 ?>
 
 <html>
-    <head>
-        <title>Tugas4_193040011</title>
-    </head>
-    <style>
-        body {
-            background-color: lightblue;
-        }
-        table{
-            background-color: green;
-            border : 1px solid black;
-            text-align : center;
-            font-size : 30px;
-        }
-    
-        td{
-            padding : 20px;
-            
-        }
-        h3{
-            text-align : center;
-            font-size : 50px;
-            color: white;
-        }
-        h5 a{
-            text-decoration: none;
-            color: white;
-            font-size: 50px;
-        }
-    </style>
-    <body>
-        <h3>Alat Elektronik</h3>
-        <table border="1px">
-            <tr>
-                <th>Gambar</th>
-                <th>Alat Elektronik</th>
-                <th>Alamat</th>
-                <th>Harga</th>
-            </tr>
-            <?php foreach ($alat as $a) { ?>
+
+<head>
+    <title>Tugas4_193040011</title>
+</head>
+<style>
+    body {
+        background-color: white;
+        padding-left: 50px;
+    }
+
+    table {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    td {
+        padding: 10px;
+
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        color: black;
+    }
+
+    h5 a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <h3>Alat Elektronik</h3>
+    <table border="1px">
+        <tr>
+            <th>Gambar</th>
+            <th>Alat Elektronik</th>
+            <th>Alamat</th>
+            <th>Harga</th>
+        </tr>
+        <?php foreach ($alat as $a) { ?>
             <tr>
                 <td><img src="../img/<?= $a['gambar']; ?>"></td>
                 <td><?= $a["alat elektronik"]; ?></td>
                 <td><?= $a["alamat"]; ?></td>
                 <td><?= $a["harga"]; ?></td>
             </tr>
-            <?php } ?>
-        </table>
-		
-		<h5 align="center"><a href="../../index.php">Back</a></h5>
-    </body>
+        <?php } ?>
+    </table>
+
+    <h5 align="center"><a href="../../index.php">Kembali</a></h5>
+</body>
+
 </html>

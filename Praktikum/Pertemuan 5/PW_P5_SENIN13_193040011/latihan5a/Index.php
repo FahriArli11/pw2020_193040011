@@ -16,14 +16,14 @@ $result = mysqli_query($conn, "SELECT * FROM elektronik")
 </head>
 <style>
   body {
-    background-color: lightseagreen;
+    padding-left: 30%;
   }
 
   table {
     background-color: lightskyblue;
     border: 1px solid black;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   td {
@@ -33,7 +33,7 @@ $result = mysqli_query($conn, "SELECT * FROM elektronik")
 
   h3 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
   }
 

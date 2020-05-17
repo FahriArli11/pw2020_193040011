@@ -29,7 +29,7 @@ $elektronik = query("SELECT * FROM elektronik")
           <td><?= $i ?></td>
           <td><?= $elk["Nama_Elektronik"]; ?></td>
           <td><?= $elk["Harga"]; ?></td>
-          <td><img width="60" src="assets/img/<?= $mkn["Gambar"]; ?>"></td>
+          <td><img width="60px" src="assets/img/<?= $elk["Gambar"]; ?>"></td>
         </tr>
         <?php $i++ ?>
       <?php endforeach;  ?>

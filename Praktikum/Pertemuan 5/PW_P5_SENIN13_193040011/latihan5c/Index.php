@@ -1,6 +1,7 @@
 <?php
 //menghubungkan dengan file php lainnya
 require 'php/functions.php';
+
 //melakukan query
 $elk = query("SELECT * FROM elektronik")
 
@@ -18,13 +19,14 @@ $elk = query("SELECT * FROM elektronik")
 <body>
   <div class="container">
     <?php foreach ($elektronik as $elk) : ?>
-      <img width="90px" src="assets/img/<?= $elk["Gambar"]; ?>" alt="">
-      <button class="tombol-kembali"><a href="php/detail.php?id=<?= $elk['id'] ?>">Lihat</a></button>
-
+      <p class="name">
+        <a href="php/detail.php?id=<?= $elk['id'] ?>">
+          <?= $elk['nama'] ?>
+        </a>
       </p>
 
     <?php endforeach;  ?>
-    </table>
+  </div>
 </body>
 
 </html>
