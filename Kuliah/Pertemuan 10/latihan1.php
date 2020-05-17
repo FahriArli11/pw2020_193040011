@@ -1,6 +1,6 @@
 <?php
 // Koneksi ke DB & Pilih Database
-$conn = mysqli_connect('localhost', 'root', '', 'pw2020_193040011');
+$conn = mysqli_connect('localhost', 'root', '', 'pw_193040011');
 
 // Query isi tabel mahasiswa
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa");

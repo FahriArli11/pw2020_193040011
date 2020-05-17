@@ -70,7 +70,7 @@ function ubah($data)
   return mysqli_affected_rows($conn);
 }
 
-fucntion registrasi($data)
+fucntion registrasi($data);
 {
   $conn = koneksi();
   $username = strtolower(stripcslashes($data["username"]));

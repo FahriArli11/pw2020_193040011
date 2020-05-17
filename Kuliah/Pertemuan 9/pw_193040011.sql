@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Apr 2020 pada 04.56
+-- Waktu pembuatan: 17 Bulan Mei 2020 pada 08.32
 -- Versi server: 10.4.8-MariaDB
 -- Versi PHP: 7.3.11
 
@@ -52,26 +52,6 @@ INSERT INTO `mahasiswa` (`id`, `nama`, `nrp`, `email`, `jurusan`, `gambar`) VALU
 (8, 'Gilarnii', '193040995', 'gilarnii@gmail.com', 'Teknik Informatika', 'nophoto.png'),
 (9, 'Brigita Tifany', '193040996', 'brigittatifany@gmail.com', 'Teknik Informatika', 'nophoto.png'),
 (10, 'Demilangston', '193040997', 'demilangston@gmail.com', 'Teknik Informatika', 'nophoto.png');
-
---
--- Indexes for dumped tables
---
-
---
--- Indeks untuk tabel `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT untuk tabel yang dibuang
---
-
---
--- AUTO_INCREMENT untuk tabel `mahasiswa`
---
-ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
