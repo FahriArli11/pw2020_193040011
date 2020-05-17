@@ -28,12 +28,12 @@ $elektronik = query("SELECT * FROM elektronik")
       <?php foreach ($elektronik as $elk) : ?>
         <tr>
           <td><?= $i; ?></td>
-          <td><img width="90px" src="assets/img/<?= $elk["Gambar"]; ?>" alt=""></td>
           <td><button class="tombol-kembali"><a href="php/detail.php?id=<?= $elk['id'] ?>">Lihat</a></button></td>
           <td><a href="php/login.php">
               <button type="">Masuk ke halaman admin</button>
             </a>
           </td>
+          <td><img width="90px" src="assets/img/<?= $elk["Gambar"]; ?>" alt=""></td>
         </tr>
       <?php endforeach;  ?>
     </table>
