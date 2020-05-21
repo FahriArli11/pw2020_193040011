@@ -26,11 +26,13 @@ $elk = query("SELECT + FROM elektronik");
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>193040011</title>
 </head>
+
 <body>
     <div class="logout">
         <a href="logout.php">Logout</a>
@@ -52,19 +54,14 @@ $elk = query("SELECT + FROM elektronik");
         <?php $i = 1; ?>
         <?php foreach ($elektronik as $elk) : ?>
             <tr>
-                <td><?= $i; ?></td>
-                <td>
-                    <a href="ubah.php?id=<? $elk['id'] ?>"><button>Ubah</button></a>
-                    <a href="hapus.php?id=<? $elk['id'] ?>" onclick="return confirm('Hapus Data??')"><button>Hapus</button></a>
-                </td>
-                <td><img src="../assets/img/<?= $elk['img']; ?>" alt=""></td>
                 <td><?= $elk['id']; ?></td>
-                <td><?= $elk['nama_elektronik']; ?></td>
-                <td>Rp. <?= $elk['harga']; ?></td>
-                <td><?= $elk['gambar']; ?></td>
+                <td><?= $elk['Nama_Elektronik']; ?></td>
+                <td>Rp. <?= $elk['Harga']; ?></td>
+                <td><img width="90px" src="assets/img/<?= $elk["Gambar"]; ?>" alt=""></td>
             </tr>
             <?php $i++; ?>
         <?php endforeach; ?>
     </table>
 </body>
+
 </html>

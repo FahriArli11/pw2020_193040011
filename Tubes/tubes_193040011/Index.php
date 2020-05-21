@@ -17,6 +17,12 @@ $elektronik = query("SELECT * FROM elektronik")
 
 <body>
   <div class="container">
+    <tr>
+      <td><a href="php/login.php">
+          <button type="">Masuk ke halaman admin</button>
+        </a>
+      </td>
+    </tr>
     <table cellpadding="10" cellspacing="0" border="1">
       <tr>
         <th>ID</th>
@@ -28,13 +34,11 @@ $elektronik = query("SELECT * FROM elektronik")
       <?php foreach ($elektronik as $elk) : ?>
         <tr>
           <td><?= $i; ?></td>
-          <td><button class="tombol-kembali"><a href="php/detail.php?id=<?= $elk['id'] ?>">Lihat</a></button></td>
-          <td><a href="php/login.php">
-              <button type="">Masuk ke halaman admin</button>
-            </a>
-          </td>
+          <td><?= $elk['Nama_Elektronik']; ?></td>
+          <td><?= $elk['Harga']; ?></td>
           <td><img width="90px" src="assets/img/<?= $elk["Gambar"]; ?>" alt=""></td>
         </tr>
+        <?php $i++ ?>
       <?php endforeach;  ?>
     </table>
   </div>
